@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <div class="container">
+        <label for="textInput">Create an image from text prompt
+        </label>
+        <textarea id="textInput" rows="8" cols="50"></textarea>
+
+        <div>
+            <label for="pageStyle"> Choose Page Style:</label>
+            <select id="pageStyle">
+                <option value="plain">Plain Page</option>
+                <option value="lined">Lined Page</option>
+            </select>
+        </div> 
+        <div>
+            <label for="fontSize"> Choose Font Size:</label>
+            <input type="number" id="fontSize" value="20"> px
+        </div>
+        <div>
+            <label for="fontStyle"> Choose Font Style:</label>
+            <select id="fontStyle">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Impact">Impact</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Lucida Console">Lucida Console</option>
+                <option value="Palatino Linotype">Palatino Linotype</option>
+                <option value="Arial Black">Arial Black</option>
+                <option value="Book Antiqua">Book Antiqua</option>
+                <option value="Courier">Courier</option>
+                <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+                <option value="Garamond">Garamond</option>
+                <option value="Franklin Gothic Medium">Franklin Gothic Medium</option>
+        
+            </select>
+        </div>
+        
+        <div>
+            <label for="textColor">  Choose Text Color:</label>
+            <input type="color" id="textColor" value="#000000">
+        </div>
+        
+
+        <div>
+            <label for="bgColor">  Choose Background Color For Image:</label>
+            <input type="color" id="bgColor" value="#ffffff">
+        </div>
+
+    
+        <button onclick="downloadImage()">Download Image</button><br><br><br>
+        <button onclick="convertToImage()">Convert Into Image</button> 
+ </div>
+        <div id="imageContainer"></div>
+    </div>
+
+    <script src="text.js"></script>
+</body>
+</html>

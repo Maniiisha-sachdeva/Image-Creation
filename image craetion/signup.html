@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      box-shadow: 0px 0px 200px 30px rgb(81, 5, 151);
+      
+    }
+
+    .signup-form {
+      width: 50%;
+      height: 60%;
+      margin: 50px;
+      padding: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: rgb(81, 5, 151);
+      box-shadow: 0px 0px 200px 30px rgb(81, 5, 151);
+      font-size: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .btn-signup {
+      background-color: rgba(0, 0, 0, 0.555);
+      color: rgb(81, 5, 151);
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0px 1000px 200px 950px rgb(81, 5, 151);
+      border: 2px solid rgb(81, 5, 151);
+    border-radius: 50px;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-form">
+    <h2 style="margin-top: -60px; font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    ">Signup New Account</h2>
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="email">Email or Phone:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="repeatPassword">Repeat Password:</label>
+        <input type="password" id="repeatPassword" name="repeatPassword" required>
+      </div>
+
+      <button type="button" class="btn-signup" onclick="validateSignup()">Signup</button>
+    </form>
+
+    <!-- Display success message -->
+    <div id="successMessage" style="display: none; margin-top: 15px; color: green;">
+      Account created successfully! You will be redirected to the home page.
+    </div>
+  </div>
+
+  <script>
+    function validateSignup() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      var repeatPassword = document.getElementById('repeatPassword').value;
+
+      // Check if the email is already in use (mock validation)
+      if (localStorage.getItem(email)) {
+        alert('Email or Phone already in use. Please use a different one.');
+        return;
+      }
+
+      // Check if password and repeat password match
+      if (password !== repeatPassword) {
+        alert('Password and Repeat Password do not match. Please try again.');
+        return;
+      }
+
+      // Save the user's information (mock signup)
+      var user = {
+        username: document.getElementById('username').value,
+        password: password,
+        email: email
+      };
+      localStorage.setItem(email, JSON.stringify(user));
+
+      // Display success message
+      document.getElementById('successMessage').style.display = 'block';
+
+      // Redirect to home page after a delay
+      setTimeout(function () {
+        window.location.href = 'home.html';
+      }, 3000); // 3000 milliseconds (3 seconds) delay
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Creation</title>
+    
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body>   
+     <h1>Image Creation</h1>
+     <div class="sign"></div>
+
+
+     <div class="vertical-line"></div>
+     <svg class="pen-icon" viewBox="0 0 24 24" width="60" height="60" fill="rgb(81, 5, 151)" stroke-width="2" stroke="rgb(81, 5, 151)">
+        <path d="M16.4,3.6L2.8,17.2c-0.8,0.8-0.8,2,0,2.8c0.8,0.8,2,0.8,2.8,0L19.2,6.4c0.8-0.8,0.8-2,0-2.8 C18,2.8,17.2,2.8,16.4,3.6z M3.6,18.4c-0.4,0.4-1,0.4-1.4,0c-0.4-0.4-0.4-1,0-1.4l5.6-5.6l2,2L5.6,18.4H3.6z M18.4,5.6l-2-2 l1.6-1.6c0.4-0.4,1-0.4,1.4,0c0.4,0.4,0.4,1,0,1.4L18.4,5.6z"/>
+    </svg>
+
+    <div class="second-vertical-line"></div>
+    <div class="sign2"></div>
+
+
+        <button id="signupButton">Signup</button>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe src="signup.html" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+    <button id="loginButton" class="top-left">Login</button>
+
+    <div id="loginModal" class="modal1">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <iframe src="login.html" width="100%" height="100%"></iframe>
+        </div>
+    </div>
+    
+   <div class="text">
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="text.html">Text To Image</a>
+
+            </li> <br> <br> <br><br><br>
+            <li>
+                <a href="resize.html">Resize The Image</a>
+            </li>
+        </ul>
+    </nav></div>
+    <div class="scroll-fade">
+
+     <h2>About</h2>
+    <div class="about">
+       <h4> Welcome to Image Creation – Where Your Ideas Take Visual Flight!</h4>
+    <p>Dive into a world of limitless creativity at Image Creation, your ultimate destination for turning concepts into captivating
+         visuals. With our innovative tools – "Text to Image" and "Images to PDF" – your imagination becomes the brush, and our canvas brings it to life.
+        </p>
+       <h4> Craft Your Visual Story:</h4>
+        <h4>&nbsp;Text to Image Magic:</h4><p> Watch your words transform into stunning visuals. Choose fonts, experiment with colors, and 
+        see your ideas materialize in a visually enchanting format.</p>
+
+       <h4> Images to PDF Mastery:</h4> <p>;Elevate your image game with "Images to PDF." Compile your visual narratives into polished PDFs, ready to impress and share.
+        </p>
+       <h4> Powered by Cutting-Edge Tech:</h4> <p>HTML, CSS, and JavaScript (or React.js): Our tech trio ensures a seamless and interactive experience, where creativity
+         meets the future.</p>
+       <h4> Why Image Creation?</h4>
+       <h4>Real-Time Visual Playground:</h4>
+       <p> Immerse yourself in real-time editing. Witness your creations evolve instantly, turning every edit into a visual revelation.</p>
+    <h4>Inspiration at Your Fingertips:</h4><p>Stuck in a creative rut? Let Image Creation inspire you with intelligent suggestions, making your creative journey a breeze.
+        </p>
+        <h4>Share Your Vision:</h4><p> Showcase your genius! Effortlessly share your designs across platforms, sparking inspiration and collaboration.
+        </p>
+        <h4>Seamless Across Devices:</h4><p> From desktops to mobiles, Image Creation adapts, ensuring your creative flow remains uninterrupted wherever you go.
+    </p><br>
+       <p> &nbsp; &nbsp; &nbsp; &nbsp; Join the Visual Revolution at [Your Website URL]. Unleash your creative potential, one visual masterpiece at a time!
+</p>
+</div>
+
+</div>
+<script>document.addEventListener('scroll', function () {
+    var scrollFade = document.querySelector('.scroll-fade');
+    var rect = scrollFade.getBoundingClientRect();
+
+    // Check if the element is in the viewport
+    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+        scrollFade.classList.add('active');
+    } else {
+        scrollFade.classList.remove('active');
+    }
+});
+</script>
+   
+<script src="home.js"></script>
+
+
+
+
+</body>
+</html>
+

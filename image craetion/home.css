@@ -1,0 +1,378 @@
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+  
+    0% {
+      opacity: 0;
+      transform: translateY(-3000px);
+    }
+  
+    60% {
+      opacity: 1;
+      transform: translateY(25px);
+    }
+  
+    75% {
+      transform: translateY(-10px);
+    }
+  
+    90% {
+      transform: translateY(5px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+    
+  
+
+h1{
+    text-align: center;
+    color: rgb(81, 5, 151);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 4px 6px rgb(81, 5, 151);
+    margin-top: 120px;
+    font-size: 100px;
+    margin-left: -10px;
+    animation: bounceInDown 0.7s ease-in-out;    
+}
+h2{
+    text-align: center;
+    color: rgb(81, 5, 151);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 4px 3px rgb(81, 5, 151);
+    margin-top: 200px;
+    font-size: 78px;
+    border: 2px solid rgb(81, 5, 151);
+    border-radius: 50px;
+    background-color: black;
+   box-shadow: 0px 1000px 200px 1100px rgb(81, 5, 151);
+
+}
+ h4{
+    font-size: 21px;
+    color: rgb(81, 5, 151);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    text-decoration: underline;
+
+ }
+p{
+    font-size: 18px;
+    color: rgba(245, 245, 245, 0.616);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+}
+.text > nav{
+    margin-left: 600px;
+    margin-top: 100px;
+
+}
+.text > nav > ul > li {
+   list-style-type: none;
+   font-size: xx-large;
+   padding-top: 10px;
+
+}
+.text > nav > ul > li >a{
+
+    margin-right: 30px;
+   text-decoration: none;
+   color: rgb(81, 5, 151);
+   font-size: 32px;
+   background-color: transparent;
+   outline: none;
+   border: 5px solid rgb(81, 5, 151);
+   padding:22px;
+   border-radius: 50px;
+   box-shadow: 0px 0px 200px 0px rgb(81, 5, 151);
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.text > nav > ul > li > a:hover {
+    color: #ffffff67; /* Change the text color on hover */
+    background-color: rgba(80, 5, 151, 0.267); /* Change the background color on hover */
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px; 
+    background: url(images/25.gif) no-repeat ;
+    background-size: contain;
+
+    
+     }
+  
+    .about{
+        border: 2px solid black;
+        border-radius: 50px;
+        padding: 10px;
+        background-color: black;
+        margin: 1px;
+        text-shadow: 0px 1px 0px rgb(81, 5, 151);
+        background: url(images/a.gif) no-repeat;
+        background-size: contain;
+    }
+   
+
+
+    
+    button {
+        margin-left: 20px;
+        padding: 10px;
+        font-size: 20px;
+        position: fixed;
+        top: 15px;
+        left: 17px;
+        background-color: black;
+       color: rgb(81, 5, 151);
+       border: 4px solid rgb(81, 5, 151);
+    border-radius: 50px;
+   box-shadow: 0px 0px 200px 20px rgb(81, 5, 151);
+   font-size: 24px;
+   width: 7%;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+    }
+    button:hover {
+        color: rgba(245, 245, 245, 0.445);
+        background-color: rgba(80, 5, 151, 0.267);
+    }
+    
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-50%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes slideDown {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    
+
+
+    
+    
+    .modal {
+        display: none;
+        position: fixed;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        animation: fadeInDown 1s ease-out;
+    }
+    .modal1{
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        animation: slideDown 1s ease-out; 
+    }
+    
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+    height: 100%;
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .close:hover {
+        color: rgb(81, 5, 151);
+    }
+
+
+
+
+
+
+    
+    
+
+.top-left {
+
+        top: 15px;
+        left: 10px;
+        margin-left: 150px;
+        font-size: 24px;
+        width: 7%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+    }
+    
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .close:hover {
+        color: rgb(81, 5, 151);
+    }
+    
+    
+    @keyframes bounceInDown {
+        0%, 60%, 75%, 90%, 100% {
+          transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+      
+        0% {
+          opacity: 0;
+          transform: translateY(-3000px);
+        }
+      
+        60% {
+          opacity: 1;
+          transform: translateY(25px);
+        }
+      
+        75% {
+          transform: translateY(-10px);
+        }
+      
+        90% {
+          transform: translateY(5px);
+        }
+      
+        100% {
+          transform: translateY(0);
+        }
+      }
+        
+    
+
+
+
+.sign2::after{
+    content: "<>"; /* Use HTML entities for the sign */
+    font-size: 25px; /* Adjust the font size as needed */
+    color: rgb(81, 5, 151); /* Set the color of the sign */
+    position: absolute;
+    top: 102%;
+    left: 5%;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 200px 50px rgba(224, 218, 219, 0);
+    animation: bounceInDown 0.7s ease-in-out;
+
+}  
+    .sign::before {
+        content: "<>"; /* Use HTML entities for the sign */
+        font-size: 25px; /* Adjust the font size as needed */
+        color: rgb(81, 5, 151); /* Set the color of the sign */
+        position: absolute;
+        top: 14%;
+        left: 5%;
+        background-color: transparent;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 200px 50px rgba(224, 218, 219, 0);
+        animation: bounceInDown 0.7s ease-in-out;
+    }
+
+
+    .vertical-line {
+        height: 210px;
+        width: 6px;
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        transform: translateX(-50%);
+        color: rgb(81, 5, 151);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.459), rgba(80, 5, 151, 0.438));
+        box-shadow: 0px 0px 200px 20px rgb(81, 5, 151);
+       
+    }
+    
+    .second-vertical-line {
+        height: 320px;
+        width: 6px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.459), rgba(80, 5, 151, 0.438));
+        position: absolute;
+        top: 54%;
+        left: 5%; /* Align with the sign */
+        transform: translateX(-50%);
+        color: rgb(81, 5, 151);
+        box-shadow: 0px 0px 200px 20px rgb(81, 5, 151);
+    }
+ 
+    
+    .pen-icon {
+        width: 26px; /* Adjust the width of the pen icon */
+        height: 30px; /* Adjust the height of the pen icon */
+        fill: #333; /* Set the color of the pen icon */
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        animation: shimmer 1s infinite linear;
+        background-color: transparent;
+    }
+    
+    @keyframes shimmer {
+        0% {
+            opacity: 0.8;
+        }
+        50% {
+            opacity: 1;
+            box-shadow: 0px 0px 10px 15px rgba(80, 5, 151, 0.267);
+        }
+        100% {
+            opacity: 0.8;
+        }
+    }
+    
+    
+
+    .scroll-fade {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 3s ease, transform 5s ease;
+    }
+    
+    .scroll-fade.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+    
